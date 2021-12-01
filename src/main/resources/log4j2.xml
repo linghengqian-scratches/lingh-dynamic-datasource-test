@@ -31,7 +31,6 @@
                 <TimeBasedTriggeringPolicy/>
             </Policies>
         </RollingFile>
-        <!--处理WARN级别的日志，并把该日志放到logs/warn.log文件中-->
         <RollingFile name="RollingFileWarn" fileName="./logs/warn.log"
                      filePattern="logs/$${date:yyyy-MM}/warn-%d{yyyy-MM-dd}-%i.log.gz">
             <Filters>
