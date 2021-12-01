@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: test
+  mvc:
+    servlet:
+      load-on-startup: 1
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
+    time-zone: GMT+8
+    locale: zh_CN
+    generator:
+      write-numbers-as-strings: true
+      write-bigdecimal-as-plain: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.lingh.pojo
